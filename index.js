@@ -14,10 +14,10 @@ app.use(cors());
 app.use( express.json({ extended: true }) );
 
 // configurar puerto del servidor de la app
-const PORT = process.env.PORT || 5000;
+const port = process.env.PORT || 5000;
 
 //arrancar la app
-app.listen(PORT, () => {
+app.listen(port, '0.0.0.0' ,() => {
     console.log(`El servidor esta funcionando en el puerto ${PORT}`)
 });
 
